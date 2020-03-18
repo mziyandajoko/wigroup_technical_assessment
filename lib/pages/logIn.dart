@@ -13,8 +13,8 @@ class _LoginScreenState extends State<LoginScreen> {
 
   // Text Field state
 
-  String email = 'joko.mzee@gmail.com';
-  String password = '12345678';
+  String email = '';
+  String password = '';
   String error = '';
 
   @override
@@ -22,12 +22,12 @@ class _LoginScreenState extends State<LoginScreen> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        backgroundColor: Colors.green[300],
+        backgroundColor: Colors.red,
         elevation: 0.0,
         title: Text('log In'),
       ),
       body: Container(
-        padding: EdgeInsets.symmetric(horizontal: 24.0),
+        padding: EdgeInsets.symmetric(horizontal: 10.0),
         child: Form(
           key: _formKey,
           child: Column(
@@ -43,7 +43,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 },
               ),
               SizedBox(
-                height: 20.0,
+                height: 10.0,
               ),
               TextFormField(
                 decoration:
@@ -59,10 +59,13 @@ class _LoginScreenState extends State<LoginScreen> {
                 title: 'LogIn',
                 colour: Colors.green,
                 onPressed: () {
-                  setState(() {
-                    Navigator.push(context,
+                  if (email != null) {
+                    return Navigator.push(context,
                         MaterialPageRoute(builder: (context) => Home()));
-                  });
+                  } else {
+                    return null;
+                  }
+
                   // if (_formKey.currentState.validate()) {
                   //   return Home();
                   // } else {

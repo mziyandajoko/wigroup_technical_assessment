@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:jokofedtest/components/constants.dart';
 import 'package:jokofedtest/components/utilityButton.dart';
 import 'package:jokofedtest/pages/register.dart';
 
@@ -11,11 +12,32 @@ class Home extends StatelessWidget {
         title: Text('Home'),
         backgroundColor: Colors.red,
       ),
+      drawer: Drawer(),
       body: Container(
         child: Column(
           children: <Widget>[
+            SizedBox(height: 20),
+            Text(
+              'Search Results Will appear on the Nextpage',
+              style: TextStyle(
+                fontSize: 20,
+              ),
+            ),
+            Form(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: <Widget>[
+                  SizedBox(height: 20),
+                  TextFormField(
+                    decoration:
+                        kFieldInputDecoration.copyWith(hintText: 'Search'),
+                  )
+                ],
+              ),
+            ),
             UtilityButtons(
-              title: 'Visit Third page',
+              title: 'Search',
               colour: Colors.blueAccent,
               onPressed: () {
                 Navigator.push(context,
