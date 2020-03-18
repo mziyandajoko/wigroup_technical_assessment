@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:jokofedtest/components/constants.dart';
 import 'package:jokofedtest/components/utilityButton.dart';
-import 'package:jokofedtest/pages/register.dart';
+import 'package:jokofedtest/pages/result.dart';
 
 class Home extends StatelessWidget {
   @override

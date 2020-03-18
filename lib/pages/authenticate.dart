@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:jokofedtest/pages/register.dart';
+import 'package:jokofedtest/pages/result.dart';
 
 import 'logIn.dart';
 
