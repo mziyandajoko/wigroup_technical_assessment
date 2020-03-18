@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "787977211323",
+    "firebase_url": "https://jokofedtestpageroutes.firebaseio.com",
+    "project_id": "jokofedtestpageroutes",
+    "storage_bucket": "jokofedtestpageroutes.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:787977211323:android:7e82c88b1d924b058bc89e",
+        "android_client_info": {
+          "package_name": "com.example.jokofedtest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "787977211323-t5achaj8vebhsoh5vsv8a56jmie1drgh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYxLsHIMrC-HcGA8b9vJW_2pwKHCEevcs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "787977211323-t5achaj8vebhsoh5vsv8a56jmie1drgh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
