@@ -31,9 +31,11 @@ class _LoginScreenState extends State<LoginScreen> {
         child: Form(
           key: _formKey,
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
+              SizedBox(
+                height: 60.0,
+              ),
               TextFormField(
                 decoration: kFieldInputDecoration.copyWith(hintText: 'email'),
                 validator: (val) =>
@@ -56,7 +58,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 },
               ),
               UtilityButtons(
-                title: 'LogIn',
+                title: 'Save',
                 colour: Colors.green,
                 onPressed: () {
                   if (email != null) {
