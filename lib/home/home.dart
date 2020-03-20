@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:jokofedtest/components/constants.dart';
 import 'package:jokofedtest/components/utilityButton.dart';
 import 'package:jokofedtest/pages/result.dart';
 
@@ -28,28 +27,9 @@ class Home extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: links.map((link) => _urlButton(context, link)).toList(),
             ),
-            SizedBox(height: 20),
-            Text(
-              'Search Results Will appear on the Nextpage',
-              style: TextStyle(
-                fontSize: 20,
-              ),
-            ),
-            Form(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: <Widget>[
-                  SizedBox(height: 20),
-                  TextFormField(
-                    decoration:
-                        kFieldInputDecoration.copyWith(hintText: 'Search'),
-                  )
-                ],
-              ),
-            ),
+            SizedBox(height: 10),
             UtilityButtons(
-              title: 'Search',
+              title: 'Third page',
               colour: Colors.blueAccent,
               onPressed: () {
                 Navigator.push(context,
